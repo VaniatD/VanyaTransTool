@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanyaTransTool", "VanyaTransTool.csproj", "{465BA5F5-DD77-445F-B57F-E0C71AA605AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{465BA5F5-DD77-445F-B57F-E0C71AA605AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465BA5F5-DD77-445F-B57F-E0C71AA605AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465BA5F5-DD77-445F-B57F-E0C71AA605AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465BA5F5-DD77-445F-B57F-E0C71AA605AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_DetectChanges = False
+		BuildVersion_UseGlobalSettings = True
+		BuildVersion_StartDate = 2000/1/1
+		SolutionGuid = {6190AF0E-F2EC-494B-9E5D-36E394BE436B}
+		BuildVersion_BuildVersioningStyle = None.None.DeltaBaseDateInDays.Increment
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_UseUniversalClock = True
+	EndGlobalSection
+EndGlobal
