@@ -109,10 +109,10 @@ namespace VanyaTransTool
 		{
 			LoadedLanguage activeLanguage = LanguageDatabase.activeLanguage;
 			LoadedLanguage english = LanguageDatabase.defaultLanguage;
-			List<LoadedLanguage.KeyedReplacement> list = (from x in activeLanguage.keyedReplacements
+			/*List<LoadedLanguage.KeyedReplacement> list = (from x in activeLanguage.keyedReplacements
 														  where !x.Value.isPlaceholder && !english.HaveTextForKey(x.Key, false)
 														  select x.Value).ToList<LoadedLanguage.KeyedReplacement>();
-			//HashSet<LoadedLanguage.KeyedReplacement> writtenUnusedKeyedTranslations = new HashSet<LoadedLanguage.KeyedReplacement>();
+			HashSet<LoadedLanguage.KeyedReplacement> writtenUnusedKeyedTranslations = new HashSet<LoadedLanguage.KeyedReplacement>();*/
 
 			string languageFolderPath = ModTransFilesCleaner.GetLanguageFolderPath(activeLanguage, modMetaData.RootDir.FullName);
 			string text = Path.Combine(languageFolderPath, "CodeLinked");
@@ -227,7 +227,7 @@ namespace VanyaTransTool
                                     }
 								}
 							}
-							bool flag = false;
+							/*bool flag = false;
 							foreach (LoadedLanguage.KeyedReplacement keyedReplacement in list)
 							{
 								if (new Uri(fileInfo3.FullName).Equals(new Uri(keyedReplacement.fileSourceFullPath)))
@@ -257,7 +257,7 @@ namespace VanyaTransTool
 							if (flag)
 							{
 								xelement.Add(Environment.NewLine);
-							}
+							}*/
 						}
 						finally
 						{
@@ -388,7 +388,7 @@ namespace VanyaTransTool
                             try
                             {
                                 IEnumerable<PossibleDefInjection> enumerable = source2.Where((PossibleDefInjection x) => x.def.defName == defName);
-                                //IEnumerable<KeyValuePair<string, DefInjectionPackage.DefInjection>> enumerable2 = source3.Where((KeyValuePair<string, DefInjectionPackage.DefInjection> x) => x.Value.DefName == defName);
+                                IEnumerable<KeyValuePair<string, DefInjectionPackage.DefInjection>> enumerable2 = source3.Where((KeyValuePair<string, DefInjectionPackage.DefInjection> x) => x.Value.DefName == defName);
                                 if (enumerable.Any())
                                 {
                                     bool flag2 = false;
@@ -519,7 +519,7 @@ namespace VanyaTransTool
                                         xElement.Add(new XComment("NEWLINE"));
                                     }
                                 }
-                                /*if (!enumerable2.Any())
+                                if (!enumerable2.Any())
                                 {
                                     continue;
                                 }
@@ -529,7 +529,7 @@ namespace VanyaTransTool
                                 {
                                     xElement.Add(GetDefInjectableFieldNode(item7.Value.path, item7.Value));
                                 }
-                                xElement.Add(new XComment("NEWLINE"));*/
+                                xElement.Add(new XComment("NEWLINE"));
                             }
                             catch (Exception ex4)
                             {
